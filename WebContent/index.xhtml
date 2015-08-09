@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets">
@@ -8,8 +8,232 @@
 <h:body>
 
     <ui:composition template="WEB-INF/template.xhtml">
+        <ui:define name="content">
+            <div class="slider-container full-bottom">
+                <div class="homepage-slider">
+                    <div>
+                        <div class="overlay"></div>
+                        <div class="homepage-slider-caption homepage-left-caption">
+                            <h3>Smart Driver</h3>
+
+                            <p>La aplicación para el conductor</p>
+                        </div>
+                        <h:graphicImage value="/resources/img/pictures/3.jpg" styleClass="responsive-image"/>
+                    </div>
+                    <!-- <div>
+                        <div class="overlay"></div>
+                        <div class="homepage-slider-caption homepage-center-caption">
+                            <h3>Slider</h3>
+                            <p>Our slider is awesome!</p>
+                        </div>
+                        <h:graphicImage library="img" name="pictures/5.jpg" class="responsive-image" alt="img"/>
+                    </div>
+                    <div>
+                        <div class="overlay"></div>
+                        <div class="homepage-slider-caption homepage-right-caption">
+                            <h3>Responsive</h3>
+                            <p>And it's fully responsive!</p>
+                        </div>
+                        <h:graphicImage library="img" name="pictures/6.jpg" class="responsive-image" alt="img"/>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container large-title no-bottom">
+                    <h3>Bienvenido</h3>
+
+                    <p>
+                        A una experiencia de usuario enfocada en tí y tu vehículo. Inicia sesion o regístrate
+                        utilizando los menús ubicados a la izquierda y derecha de la pantalla!
+                    </p>
+
+                    <div class="center-socials">
+                        <a href="#" class="facebook-color facebook-social"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google-color google-social"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="twitter-color twitter-social"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+            </div>
 
 
+            <!-- Content Heading -->
+            <div class="content-heading">
+                <h4></h4>
+
+                <p></p>
+                <i class="fa fa-cog"></i>
+
+                <div class="overlay"></div>
+                <h:graphicImage library="img" name="pictures/5w.jpg"/>
+            </div>
+
+            <!-- Page Content-->
+            <div class="content">
+                <div class="decoration"></div>
+                <div class="container no-bottom">
+                    <!-- Page Columns-->
+                    <div class="one-half-responsive">
+                        <p class="thumb-left no-bottom">
+                            <h:graphicImage library="img" name="/pictures/1s.jpg"/>
+                            <strong>Mobile app feel </strong>
+                            <em><br/>Lorem Ipsum is simply dummy text of the printing and typeset. </em>
+                        </p>
+
+                        <div class="thumb-clear"></div>
+                    </div>
+                    <div class="decoration hide-if-responsive"></div>
+                    <div class="one-half-responsive last-column">
+                        <p class="thumb-right no-bottom">
+                            <h:graphicImage library="img" name="/pictures/2s.jpg"/>
+                            <strong>Elite Quality Product</strong>
+                            <em><br/>Lorem Ipsum is simply dummy text of the printing and typeset. </em>
+                        </p>
+
+                        <div class="thumb-clear"></div>
+                    </div>
+                    <div class="decoration hide-if-responsive"></div>
+                    <div class="one-half-responsive">
+                        <p class="thumb-left no-bottom">
+                            <h:graphicImage library="img" name="pictures/3s.jpg" alt="img"/>
+                            <strong>Mobile and Tablet</strong>
+                            <em><br/>Lorem Ipsum is simply dummy text of the printing and typeset. </em>
+                        </p>
+
+                        <div class="thumb-clear"></div>
+                    </div>
+                    <div class="decoration hide-if-responsive"></div>
+                    <div class="one-half-responsive last-column">
+                        <p class="thumb-right no-bottom">
+                            <h:graphicImage library="img" name="pictures/4s.jpg" alt="img"/>
+                            <strong>Smooth transitions</strong>
+                            <em><br/>Lorem Ipsum is simply dummy text of the printing and typeset. </em>
+                        </p>
+
+                        <div class="thumb-clear"></div>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+            </div>
+
+            <!-- Content Heading -->
+            <div class="content-heading">
+                <h4>Desarrolladores</h4>
+
+                <p>Conoce a nuestros desarrolladores</p>
+                <i class="fa fa-user"></i>
+
+                <div class="overlay"></div>
+                <h:graphicImage library="img" name="pictures/6w.jpg" alt="img"/>
+            </div>
+
+            <!-- Page Content-->
+            <div class="content">
+                <div class="decoration"></div>
+                <!-- Staff Slider-->
+                <div class="container">
+                    <a href="#" class="next-staff"></a>
+                    <a href="#" class="prev-staff"></a>
+
+                    <div class="staff-slider">
+                        <div>
+                            <div class="staff-item">
+                                <h:graphicImage library="img" name="pictures/1s.jpg" alt="img"/>
+                                <h4>Nelson Pantaleón</h4>
+                                <em>Web Developer</em>
+                                <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</strong>
+                                <a href="#" class="button button-red center-button">Call</a>
+                            </div>
+                            <br/>
+
+                            <div class="staff-item">
+                                <h:graphicImage library="img" name="pictures/1s.jpg" alt="img"/>
+                                <h4>Adrian el Piloto</h4>
+                                <em>Web Developer</em>
+                                <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</strong>
+                                <a href="#" class="button button-red center-button">Call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+            </div>
+
+            <!-- Content Heading-->
+            <div class="content-heading">
+                <h4>Featured Project</h4>
+
+                <p>Check and enjoy our featured item</p>
+                <i class="fa fa-star-o"></i>
+
+                <div class="overlay"></div>
+                <h:graphicImage library="img" name="pictures/7w.jpg" alt="img"/>
+            </div>
+
+            <!-- Page Content-->
+            <div class="content">
+                <div class="decoration"></div>
+                <div class="container">
+                    <div class="one-half-responsive">
+                        <h:graphicImage library="img" name="mobile1.png" alt="img" styleClass="responsive-image"/>
+                    </div>
+                    <div class="one-half-responsive last-column">
+                        <h3 class="center-if-mobile no-bottom">Awesome project title</h3>
+                        <em class="center-if-mobile small-text half-bottom">Awesome project subtitle</em>
+
+                        <p class="center-if-mobile no-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in quam mauris.
+                            Nam condimentum convallis lectus, ac tempus massa eleifend sit amet. Ut nec orci
+                            ut urna mollis elementum a et diam. Donec varius orci a convallis convallis.
+                        </p>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+            </div>
+
+            <!-- Content Heading -->
+            <div class="content-heading">
+                <h4>Testimonials</h4>
+
+                <p>Awesome reviews by our customers!</p>
+                <i class="fa fa-quote-left"></i>
+
+                <div class="overlay"></div>
+                <h:graphicImage library="img" name="pictures/6w.jpg" alt="img"/>
+            </div>
+
+            <div class="content">
+                <div class="decoration"></div>
+                <div class="quote-slider full-bottom" >
+                    <div>
+                        <h4>
+                            Great all around product, with some of the best documentation I have ever seen. Really thorough and easy to follow!
+                            Also the support responsiveness is really fantastic. Extremely happy with everything. Thanks again!
+                        </h4>
+                        <a href="#">ChrisPizzoDesign - ThemeForest</a>
+                    </div>
+                    <div>
+                        <h4>
+                            Exceptional theme. Completely customisable, the best customer service I've ever had from a theme/plugin. Not only are
+                            they fast but polite and don't make you feel like a doofus even when you are probably being one.
+                        </h4>
+                        <a href="#">larzick27 - ThemeForest</a>
+                    </div>
+                    <div>
+                        <h4>
+                            One of the best themes I've used so far and is very well documented, coded and very clean. Got it intergrated with
+                            wordpress in less than an hour! But this is an amazing template built with a load of features!
+                        </h4>
+                        <a href="#">ramseycosay18 - ThemeForest</a>
+                    </div>
+                </div>
+
+                <div class="decoration"></div>
+            </div>
+        </ui:define>
     </ui:composition>
 
 </h:body></html>
