@@ -71,7 +71,6 @@
                 </div>
 
                 <div class="sidebar-logo">
-                    <!--<a href="index.html"></a>-->
                     <h:link outcome="index.xhtml"/>
                 </div>
 
@@ -114,7 +113,7 @@
                     <!--Mantenimiento-->
                     <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-wrench"></i>Mantenimiento<i class="fa fa-plus"></i></a>
                         <ul class="submenu">
-                            <li><a href="/crear-mantenimiento"><i class="fa fa-angle-right"></i>Crear Mantenimiento<i class="fa fa-circle"></i></a>
+                            <li><h:link outcome="crear-mantenimiento"><i class="fa fa-angle-right"></i>Crear Mantenimiento<i class="fa fa-circle"></i></h:link>
                             </li>
                             <li><a href="/mantenimientos"><i class="fa fa-angle-right"></i>Ver Mantenimientos<i class="fa fa-circle"></i></a></li>
                         </ul>
@@ -147,7 +146,7 @@
                 </div>
 
                 <div class="sidebar-logo">
-                    <a href="index.html"></a>
+                    <h:link outcome="index" />
                 </div>
 
                 <div class="sidebar-divider">
@@ -185,7 +184,7 @@
         <!-- Area principal -->
         <div id="content" class="snap-content">
             <div class="header">
-                <a href="index.html" class="header-logo"></a>
+                <h:link outcome="index" styleClass="header-logo"/>
                 <a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
                 <a href="#" class="open-more"><i class="fa fa-wrench"></i></a>
             </div>
