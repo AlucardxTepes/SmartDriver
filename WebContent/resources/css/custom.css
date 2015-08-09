@@ -1,0 +1,71 @@
+
+.custom-data-galleries .options-tab {
+    width: 646px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.custom-data-galleries .options-tab a {
+    margin: 6px;
+}
+
+.mantenimiento-form {}
+.mantenimiento-form select {
+    min-width: 100%;
+    height: 40px;
+    background: url(#{resource['/img/ui/arrow-down.png']}) no-repeat;
+    background-size: 10px auto;
+    background-position: 96% center;
+    border: 1px #cacaca solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    display: block;
+    box-sizing: border-box;
+    color: #666666;
+}
+.mantenimiento-form select option {
+    padding: 5px;
+}
+.mantenimiento-form a {
+    /*display: inline-block;*/
+}
+
+
+
+@media all and (max-width: 705px) {
+    .custom-data-galleries {
+
+    }
+
+    .custom-data-galleries .options-tab {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .custom-data-galleries .options-tab a {
+        width: 47%;
+        margin: 1.5%;
+    }
+
+}
+
+@media all and (max-width: 425px) {
+    .custom-data-galleries {
+
+    }
+
+    .custom-data-galleries .options-tab {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .custom-data-galleries .options-tab a {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}

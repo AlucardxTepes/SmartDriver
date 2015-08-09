@@ -32,6 +32,7 @@
     <h:outputStylesheet library="css" name="framework.css"/>
     <h:outputStylesheet library="css" name="owl.theme.css"/>
     <h:outputStylesheet library="css" name="swipebox.css"/>
+    <h:outputStylesheet library="css" name="custom.css"/>
     <!--<h:outputStylesheet library="css" name="font-awesome.css"/>-->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <h:outputStylesheet library="css" name="animate.css"/>
@@ -86,7 +87,6 @@
                     <li class="has-submenu">
                         <a class="deploy-submenu" href="#"><i class="fa fa-mobile"></i>Usuario<i class="fa fa-plus"></i></a>
                         <ul class="submenu">
-                            <!--<li><a href="pageapp-login.html"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></a></li>-->
                             <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></h:link></li>
                             <li><a href="pageapp-sigin.html"><i class="fa fa-angle-right"></i>Registrate<i class="fa fa-circle"></i></a></li>
                             <li><a href="pageapp-coverpage.html"><i class="fa fa-angle-right"></i>Coverpage<i class="fa fa-circle"></i></a></li>
@@ -97,15 +97,36 @@
                     <li class="has-submenu">
                         <a class="deploy-submenu" href="#"><i class="fa fa-car"></i>Vehículos<i class="fa fa-plus"></i></a>
                         <ul class="submenu">
-                            <!-- <li><a href="page-error.html"><i class="fa fa-angle-right"></i>404 Page<i class="fa fa-circle"></i></a></li> -->
-                            <!-- <li><a href="page-soon.html"><i class="fa fa-angle-right"></i>Soon Page<i class="fa fa-circle"></i></a></li> -->
-                            <!--<li><a href="pageapp-login.html"><i class="fa fa-angle-right"></i>Inicia sesión primero</a></li>-->
                             <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Inicia sesión primero</h:link></li>
-                            <!-- <li><a href="index2.html"><i class="fa fa-angle-right"></i>Home Fullscreen<i class="fa fa-circle"></i></a></li> -->
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="/lancer"><i class="fa fa-angle-right"></i>Lancer 2003<i class="fa fa-circle"></i></a></li>
                         </ul>
                     </li>
-                    <li><a href="page-mantenimiento.html"><i class="fa fa-wrench"></i>Mantenimiento<i class="fa fa-circle"></i></a></li>
-
+                    <!--Documentos-->
+                    <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-file-text"></i>Documentos<i class="fa fa-plus"></i></a>
+                        <ul class="submenu">
+                            <li><a href="/crear-documento"><i class="fa fa-angle-right"></i>Crear Documento<i class="fa fa-circle"></i></a></li>
+                            <li><a href="/documentos"><i class="fa fa-angle-right"></i>Mis Documentos<i class="fa fa-circleli has-submenu"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Mantenimiento-->
+                    <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-wrench"></i>Mantenimiento<i class="fa fa-plus"></i></a>
+                        <ul class="submenu">
+                            <li><a href="/crear-mantenimiento"><i class="fa fa-angle-right"></i>Crear Mantenimiento<i class="fa fa-circle"></i></a>
+                            </li>
+                            <li><a href="/mantenimientos"><i class="fa fa-angle-right"></i>Ver Mantenimientos<i class="fa fa-circle"></i></a></li>
+                        </ul>
+                    </li>
+                    <!--Revisiones-->
+                    <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-calendar-check-o"></i>Revisiones<i
+                            class="fa fa-plus"></i></a>
+                        <ul class="submenu">
+                            <li><a href="/crear-revision"><i class="fa fa-angle-right"></i>Crear Revision<i class="fa fa-circle"></i></a></li>
+                            <li><a href="/revisiones"><i class="fa fa-angle-right"></i>Ver Revisiones<i class="fa fa-circle"></i></a></li>
+                        </ul>
+                    </li>
                     <li><a href="page-video.html"><i class="fa fa-youtube-play"></i>Videos<i class="fa fa-circle"></i></a></li>
                     <li><a href="page-blog.html"><i class="fa fa-pencil"></i>Blog<i class="fa fa-circle"></i></a></li>
                     <li><a href="contact.html"><i class="fa fa-envelope"></i>Contacto<i class="fa fa-circle"></i></a></li>
@@ -185,7 +206,6 @@
                 <p class="center-text">Copyright 2015. All rights reserved.</p>
             </div>
         </div>
-
 
 
         <div class="share-bottom">
