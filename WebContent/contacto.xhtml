@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+</h:head>
+<h:body>
+
+    <ui:composition template="WEB-INF/template.xhtml">
+        <ui:define name="content">
+
+
+            <div class="content">
+                <div class="decoration"></div>
+                <div class="one-half-responsive">
+                    <h4>Envíanos un mensaje</h4>
+
+                    <p>Utiliza el siguiente formulario para enviarnos un mensaje:</p>
+
+                    <div class="container no-bottom">
+                        <div class="contact-form no-bottom">
+                            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                                <div class="big-notification green-notification">
+                                    <h3 class="uppercase">Mensaje Enviado</h3>
+                                    <a href="#" class="close-big-notification">x</a>
+
+                                    <p>Su mensaje ha sido enviado. Te responderemos en aproximadamente 48 horas, gracias!</p>
+                                </div>
+                            </div>
+
+                            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                                <fieldset>
+                                    <div class="formValidationError" id="contactNameFieldError">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Nombre está vacío!</p>
+                                        </div>
+                                    </div>
+                                    <div class="formValidationError" id="contactEmailFieldError">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Email está vacío!</p>
+                                        </div>
+                                    </div>
+                                    <div class="formValidationError" id="contactEmailFieldError2">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Email no es válido!</p>
+                                        </div>
+                                    </div>
+                                    <div class="formValidationError" id="contactMessageTextareaError">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Tu mensaje está vacío!</p>
+                                        </div>
+                                    </div>
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactNameField" for="contactNameField">Nombre:<span>(requerido)</span></label>
+                                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                    </div>
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactEmailField" for="contactEmailField">Email: <span>(requerido)</span></label>
+                                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField"
+                                               id="contactEmailField"/>
+                                    </div>
+                                    <div class="formTextareaWrap">
+                                        <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Mensaje:
+                                            <span>(requerido)</span></label>
+                                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField"
+                                                  id="contactMessageTextarea" cols="10" rows="10"></textarea>
+                                    </div>
+                                    <div class="formSubmitButtonErrorsWrap">
+                                        <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton"
+                                               value="Enviar" data-formId="contactForm"/>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="decoration hide-if-responsive"></div>
+                <div class="one-half-responsive last-column">
+                    <div class="container no-bottom">
+                        <h4>Información de contacto:</h4>
+
+                        <p>
+                            <strong>Información Postal:</strong><br/>
+                            PO Box 809 Calle Juan Perez<br/>
+                            Santo Domingo, República Dominicana
+                        </p>
+
+                        <p>
+                            <strong>Domicilio:</strong><br/>
+                            Avenida John F. Kennedy, No. 121<br/>
+                            Santo Domingo, República Dominicana
+                        </p>
+
+                        <p>
+                            <strong>Contacto:</strong><br/>
+                            <a href="#" class="contact-call"><i class="fa fa-phone"></i>Teléfono: + 809 567 9875</a>
+                            <a href="#" class="contact-text"><i class="fa fa-comments"></i>Message: + 829 544 5324</a>
+                            <a href="#" class="contact-mail"><i class="fa fa-envelope"></i>Email: contacto@smartdriver.com</a>
+                            <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>Fanpage: smartdriver</a>
+                            <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>Twitter: @smartdriver</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decoration container"></div>
+
+
+        </ui:define>
+    </ui:composition>
+
+</h:body></html>
