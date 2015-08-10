@@ -15,18 +15,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
-    <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">-->
-    <!--<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/splash/splash-icon-big.png">-->
-    <!--<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 	media="screen and (max-device-width: 320px)" />-->
-    <!--<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />-->
-    <!--<link rel="apple-touch-startup-image" href="images/splash/splash-screen-six.png" media="(device-width: 375px)">-->
-    <!--<link rel="apple-touch-startup-image" href="images/splash/splash-screen-six-plus.png" media="(device-width: 414px)">-->
-    <!--<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />-->
-    <!--<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />-->
-    <!--<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />-->
-    <!--<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>-->
-    <!--<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>-->
-
     <!-- ==============Archivos CSS================-->
     <h:outputStylesheet library="css" name="style.css"/>
     <h:outputStylesheet library="css" name="framework.css"/>
@@ -55,192 +43,197 @@
             </p>
         </div>
     </div>
-    <!-- ==============Mensaje Cargando================-->
 
-    <!-- ==============Menu izquierda==================-->
-    <div class="all-elements">
-        <div class="snap-drawers">
-            <!-- Left Sidebar -->
-            <div class="snap-drawer snap-drawer-left">
-                <div class="sidebar-header">
-                    <a href="#"><i class="fa fa-phone"></i></a>
-                    <a href="#"><i class="fa fa-comment"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
+    <!-- ==============Contenedor======================-->
+    <div id="contenedor">
+
+
+        <!-- ==============Menu izquierda==================-->
+        <div class="all-elements">
+            <div class="snap-drawers">
+                <!-- Left Sidebar -->
+                <div class="snap-drawer snap-drawer-left">
+                    <div class="sidebar-header">
+                        <a href="#"><i class="fa fa-phone"></i></a>
+                        <a href="#"><i class="fa fa-comment"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-times"></i></a>
+                    </div>
+
+                    <div class="sidebar-logo">
+                        <h:link outcome="index.xhtml"/>
+                    </div>
+
+                    <div class="sidebar-divider">
+                        Menu
+                    </div>
+
+                    <ul class="sidebar-navigation">
+                        <!-- homepage -->
+                        <li><a href="#" class="active-menu"><i class="fa fa-home"></i>Inicio<i class="fa fa-circle"></i></a></li>
+
+                        <!-- Login -->
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-mobile"></i>Usuario<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></h:link></li>
+                                <li><a href="pageapp-sigin.html"><i class="fa fa-angle-right"></i>Registrate<i class="fa fa-circle"></i></a></li>
+                                <li><a href="pageapp-userlist.html"><i class="fa fa-angle-right"></i>User List<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>
+                        <!-- Vehiculos -->
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-car"></i>Vehículos<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Inicia sesión primero</h:link></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="/lancer"><i class="fa fa-angle-right"></i>Lancer 2003<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>
+                        <!--Documentos-->
+                        <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-file-text"></i>Documentos<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><a href="/crear-documento"><i class="fa fa-angle-right"></i>Crear Documento<i class="fa fa-circle"></i></a></li>
+                                <li><a href="/documentos"><i class="fa fa-angle-right"></i>Mis Documentos<i
+                                        class="fa fa-circleli has-submenu"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--Mantenimiento-->
+                        <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-wrench"></i>Mantenimiento<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><h:link outcome="crear-mantenimiento"><i class="fa fa-angle-right"></i>Crear Mantenimiento<i
+                                        class="fa fa-circle"></i></h:link>
+                                </li>
+                                <li><a href="/mantenimientos"><i class="fa fa-angle-right"></i>Ver Mantenimientos<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>
+                        <!--Revisiones-->
+                        <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-calendar-check-o"></i>Revisiones<i
+                                class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><a href="/crear-revision"><i class="fa fa-angle-right"></i>Crear Revision<i class="fa fa-circle"></i></a></li>
+                                <li><a href="/revisiones"><i class="fa fa-angle-right"></i>Ver Revisiones<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="page-video.html"><i class="fa fa-youtube-play"></i>Videos<i class="fa fa-circle"></i></a></li>
+                        <li><a href="page-blog.html"><i class="fa fa-pencil"></i>Blog<i class="fa fa-circle"></i></a></li>
+                        <li><h:link outcome="contacto"><i class="fa fa-envelope"></i>Contacto<i class="fa fa-circle"></i></h:link></li>
+
+                    </ul>
+                    <div class="sidebar-divider">
+                        Copyright 2015. All rights reserved.
+                    </div>
                 </div>
 
-                <div class="sidebar-logo">
-                    <h:link outcome="index.xhtml"/>
-                </div>
+                <!-- ==============Menu Derecha==================-->
+                <div class="snap-drawer snap-drawer-right">
+                    <div class="sidebar-header">
+                        <a href="#"><i class="fa fa-phone"></i></a>
+                        <a href="#"><i class="fa fa-comment"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-times"></i></a>
+                    </div>
 
-                <div class="sidebar-divider">
-                    Menu
-                </div>
+                    <div class="sidebar-logo">
+                        <h:link outcome="index"/>
+                    </div>
 
-                <ul class="sidebar-navigation">
-                    <!-- homepage -->
-                    <li><a href="#" class="active-menu"><i class="fa fa-home"></i>Pantalla Principal<i class="fa fa-circle"></i></a></li>
+                    <div class="sidebar-divider">
+                        Estatus vehículos
+                    </div>
 
-                    <!-- Login -->
-                    <li class="has-submenu">
-                        <a class="deploy-submenu" href="#"><i class="fa fa-mobile"></i>Usuario<i class="fa fa-plus"></i></a>
-                        <ul class="submenu">
-                            <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></h:link></li>
-                            <li><a href="pageapp-sigin.html"><i class="fa fa-angle-right"></i>Registrate<i class="fa fa-circle"></i></a></li>
-                            <li><a href="pageapp-coverpage.html"><i class="fa fa-angle-right"></i>Coverpage<i class="fa fa-circle"></i></a></li>
-                            <li><a href="pageapp-userlist.html"><i class="fa fa-angle-right"></i>User List<i class="fa fa-circle"></i></a></li>
-                        </ul>
-                    </li>
-                    <!-- Vehiculos -->
-                    <li class="has-submenu">
-                        <a class="deploy-submenu" href="#"><i class="fa fa-car"></i>Vehículos<i class="fa fa-plus"></i></a>
-                        <ul class="submenu">
-                            <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Inicia sesión primero</h:link></li>
-                        </ul>
-                        <ul class="submenu">
-                            <li><a href="/lancer"><i class="fa fa-angle-right"></i>Lancer 2003<i class="fa fa-circle"></i></a></li>
-                        </ul>
-                    </li>
-                    <!--Documentos-->
-                    <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-file-text"></i>Documentos<i class="fa fa-plus"></i></a>
-                        <ul class="submenu">
-                            <li><a href="/crear-documento"><i class="fa fa-angle-right"></i>Crear Documento<i class="fa fa-circle"></i></a></li>
-                            <li><a href="/documentos"><i class="fa fa-angle-right"></i>Mis Documentos<i class="fa fa-circleli has-submenu"></i></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--Mantenimiento-->
-                    <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-wrench"></i>Mantenimiento<i class="fa fa-plus"></i></a>
-                        <ul class="submenu">
-                            <li><h:link outcome="crear-mantenimiento"><i class="fa fa-angle-right"></i>Crear Mantenimiento<i class="fa fa-circle"></i></h:link>
-                            </li>
-                            <li><a href="/mantenimientos"><i class="fa fa-angle-right"></i>Ver Mantenimientos<i class="fa fa-circle"></i></a></li>
-                        </ul>
-                    </li>
-                    <!--Revisiones-->
-                    <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-calendar-check-o"></i>Revisiones<i
-                            class="fa fa-plus"></i></a>
-                        <ul class="submenu">
-                            <li><a href="/crear-revision"><i class="fa fa-angle-right"></i>Crear Revision<i class="fa fa-circle"></i></a></li>
-                            <li><a href="/revisiones"><i class="fa fa-angle-right"></i>Ver Revisiones<i class="fa fa-circle"></i></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="page-video.html"><i class="fa fa-youtube-play"></i>Videos<i class="fa fa-circle"></i></a></li>
-                    <li><a href="page-blog.html"><i class="fa fa-pencil"></i>Blog<i class="fa fa-circle"></i></a></li>
-                    <li><h:link outcome="contacto"><i class="fa fa-envelope"></i>Contacto<i class="fa fa-circle"></i></h:link></li>
+                    <a href="#" class="sidebar-update red-update">
+                        <i class="fa fa-times"></i>
+                        <strong>Alerta</strong>
+                        <em>Cambio de aceite</em>
+                    </a>
 
-                </ul>
-                <div class="sidebar-divider">
-                    Copyright 2015. All rights reserved.
+                    <a href="#" class="sidebar-update yellow-update full-bottom">
+                        <i class="fa fa-warning"></i>
+                        <strong>Atención</strong>
+                        <em>Cambio de gomas pronto</em>
+                    </a>
+
+                    <div class="sidebar-divider">
+                        Redes sociales
+                    </div>
+
+                    <ul class="sidebar-navigation">
+                        <li><a href="#"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i>Google Plus<i class="fa fa-caret-right"></i></a></li>
+                    </ul>
+
+                    <div class="sidebar-divider">
+                        Copyright 2015. All rights reserved.
+                    </div>
                 </div>
             </div>
 
-            <!-- ==============Menu Derecha==================-->
-            <div class="snap-drawer snap-drawer-right">
-                <div class="sidebar-header">
-                    <a href="#"><i class="fa fa-phone"></i></a>
-                    <a href="#"><i class="fa fa-comment"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
+            <!-- Area principal -->
+            <div id="content" class="snap-content">
+                <div class="header">
+                    <h:link outcome="index" styleClass="header-logo"/>
+                    <a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
+                    <a href="#" class="open-more"><i class="fa fa-wrench"></i></a>
                 </div>
 
-                <div class="sidebar-logo">
-                    <h:link outcome="index"/>
-                </div>
+                <!--Contenido de la pagina-->
+                <ui:insert name="content">
+                </ui:insert>
 
-                <div class="sidebar-divider">
-                    Estatus vehículos
-                </div>
-
-                <a href="#" class="sidebar-update red-update">
-                    <i class="fa fa-times"></i>
-                    <strong>Alerta</strong>
-                    <em>Cambio de aceite</em>
-                </a>
-
-                <a href="#" class="sidebar-update yellow-update full-bottom">
-                    <i class="fa fa-warning"></i>
-                    <strong>Atención</strong>
-                    <em>Cambio de gomas pronto</em>
-                </a>
-
-                <div class="sidebar-divider">
-                    Redes sociales
-                </div>
-
-                <ul class="sidebar-navigation">
-                    <li><a href="#"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-caret-right"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-caret-right"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i>Google Plus<i class="fa fa-caret-right"></i></a></li>
-                </ul>
-
-                <div class="sidebar-divider">
-                    Copyright 2015. All rights reserved.
+                <!-- Page Footer-->
+                <div class="footer">
+                    <div class="footer-socials half-bottom">
+                        <a href="#" class="footer-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="footer-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="footer-google"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="footer-share show-share-bottom"><i class="fa fa-share-alt"></i></a>
+                        <a href="#" class="footer-up"><i class="fa fa-angle-up"></i></a>
+                    </div>
+                    <p class="center-text">Copyright 2015. All rights reserved.</p>
                 </div>
             </div>
+
+
+            <div class="share-bottom">
+                <h3>Share Page</h3>
+
+                <div class="share-socials-bottom">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.themeforest.net/">
+                        <i class="fa fa-facebook facebook-color"></i>
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/home?status=Check%20out%20ThemeForest%20http://www.themeforest.net">
+                        <i class="fa fa-twitter twitter-color"></i>
+                        Twitter
+                    </a>
+                    <a href="https://plus.google.com/share?url=http://www.themeforest.net">
+                        <i class="fa fa-google-plus google-color"></i>
+                        Google
+                    </a>
+
+                    <a href="https://pinterest.com/pin/create/button/?url=http://www.themeforest.net/&amp;media=https://0.s3.envato.com/files/63790821/profile-image.jpg&amp;description=Themes%20and%20Templates">
+                        <i class="fa fa-pinterest-p pinterest-color"></i>
+                        Pinterest
+                    </a>
+                    <a href="sms:">
+                        <i class="fa fa-comment-o sms-color"></i>
+                        Text
+                    </a>
+                    <a href="mailto:?&amp;subject=Check this page out!&amp;body=http://www.themeforest.net">
+                        <i class="fa fa-envelope-o mail-color"></i>
+                        Email
+                    </a>
+                </div>
+                <a href="#" class="close-share-bottom">Close</a>
+            </div>
+
         </div>
-
-        <!-- Area principal -->
-        <div id="content" class="snap-content">
-            <div class="header">
-                <h:link outcome="index" styleClass="header-logo"/>
-                <a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
-                <a href="#" class="open-more"><i class="fa fa-wrench"></i></a>
-            </div>
-
-            <!--Contenido de la pagina-->
-            <ui:insert name="content">
-            </ui:insert>
-
-            <!-- Page Footer-->
-            <div class="footer">
-                <div class="footer-socials half-bottom">
-                    <a href="#" class="footer-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="footer-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="footer-google"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="footer-share show-share-bottom"><i class="fa fa-share-alt"></i></a>
-                    <a href="#" class="footer-up"><i class="fa fa-angle-up"></i></a>
-                </div>
-                <p class="center-text">Copyright 2015. All rights reserved.</p>
-            </div>
-        </div>
-
-
-        <div class="share-bottom">
-            <h3>Share Page</h3>
-
-            <div class="share-socials-bottom">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.themeforest.net/">
-                    <i class="fa fa-facebook facebook-color"></i>
-                    Facebook
-                </a>
-                <a href="https://twitter.com/home?status=Check%20out%20ThemeForest%20http://www.themeforest.net">
-                    <i class="fa fa-twitter twitter-color"></i>
-                    Twitter
-                </a>
-                <a href="https://plus.google.com/share?url=http://www.themeforest.net">
-                    <i class="fa fa-google-plus google-color"></i>
-                    Google
-                </a>
-
-                <a href="https://pinterest.com/pin/create/button/?url=http://www.themeforest.net/&amp;media=https://0.s3.envato.com/files/63790821/profile-image.jpg&amp;description=Themes%20and%20Templates">
-                    <i class="fa fa-pinterest-p pinterest-color"></i>
-                    Pinterest
-                </a>
-                <a href="sms:">
-                    <i class="fa fa-comment-o sms-color"></i>
-                    Text
-                </a>
-                <a href="mailto:?&amp;subject=Check this page out!&amp;body=http://www.themeforest.net">
-                    <i class="fa fa-envelope-o mail-color"></i>
-                    Email
-                </a>
-            </div>
-            <a href="#" class="close-share-bottom">Close</a>
-        </div>
-
     </div>
 
 </h:body>
