@@ -76,21 +76,28 @@
                         <!-- Login -->
                         <li class="has-submenu">
                             <a class="deploy-submenu" href="#"><i class="fa fa-mobile"></i>Usuario<i class="fa fa-plus"></i></a>
-                            <ul class="submenu">
-                                <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></h:link></li>
-                                <li><a href="pageapp-sigin.html"><i class="fa fa-angle-right"></i>Registrate<i class="fa fa-circle"></i></a></li>
-                                <li><a href="pageapp-userlist.html"><i class="fa fa-angle-right"></i>User List<i class="fa fa-circle"></i></a></li>
-                            </ul>
+                            <h:form rendered="#{!login.loggedIn}">
+                                <ul class="submenu">
+                                    <li><a href="pageapp-sigin.html"><i class="fa fa-angle-right"></i>Registrate<i class="fa fa-circle"></i></a></li>
+                                    <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></h:link></li>
+                                </ul>
+                            </h:form>
                         </li>
                         <!-- Vehiculos -->
                         <li class="has-submenu">
                             <a class="deploy-submenu" href="#"><i class="fa fa-car"></i>Vehículos<i class="fa fa-plus"></i></a>
-                            <ul class="submenu">
-                                <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Inicia sesión primero</h:link></li>
-                            </ul>
-                            <ul class="submenu">
-                                <li><a href="/lancer"><i class="fa fa-angle-right"></i>Lancer 2003<i class="fa fa-circle"></i></a></li>
-                            </ul>
+                            <!--Si no ha iniciado sesion-->
+                            <h:form rendered="#{!login.loggedIn}">
+                                <ul class="submenu">
+                                    <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Inicia sesión primero</h:link></li>
+                                </ul>
+                            </h:form>
+                            <!--Mostrar vehiculos si ya esta logueado-->
+                            <h:form rendered="#{login.loggedIn}">
+                                <ul class="submenu">
+                                    <li><a href="/lancer"><i class="fa fa-angle-right"></i>Lancer 2003<i class="fa fa-circle"></i></a></li>
+                                </ul>
+                            </h:form>
                         </li>
                         <!--Documentos-->
                         <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-file-text"></i>Documentos<i class="fa fa-plus"></i></a>

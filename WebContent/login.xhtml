@@ -21,7 +21,10 @@
                     <input type="password" class="login-password" placeholder="Contraseña"/>
 
                     <div class="one-half">
-                        <a href="index2.html" class="button button-green">Acceder</a>
+                        <h:form>
+                            <h:commandLink styleClass="button button-green" value="Acceder" action="#{login.doLogin}"/>
+                        </h:form>
+                        <!--<a href="index2.html" class="button button-green">Acceder</a>-->
                     </div>
                     <div class="one-half last-column">
                         <a href="pageapp-sigin.html" class="button button-blue">Crear cuenta</a>
