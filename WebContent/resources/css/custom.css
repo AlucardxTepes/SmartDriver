@@ -1,11 +1,12 @@
-body{
+body {
     background-color: black;
 }
-#contenedor{
+
+#contenedor {
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 500px;
+    max-width: 600px;
     max-height: 1024px;
     margin: 0 auto;
     top: 0;
@@ -13,6 +14,90 @@ body{
     right: 0;
 }
 
+/*Formulario de registro*/
+
+.register-page-wrapper {
+    position: absolute;
+    width: 280px;
+    height: 600px;
+    top: 50%;
+    margin-top: -300px;
+    left: 50%;
+    margin-left: -140px;
+    z-index: 2;
+}
+
+.register-logo {
+    width: 66%;
+    height: 12%;
+}
+
+.register-tab-content {
+    height: 62%;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+    left: 0;
+
+}
+
+.register-textbox {
+    background-image: url(#{resource[ 'img/misc/menu-bg.png' ]});
+    color: #bcbcbc;
+    display: block;
+    width: 100%;
+    height: 7%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -7px;
+    line-height: 100%;
+    border: solid 1px #cacaca;
+    color: #666666;
+    border-radius: 0px;
+}
+.btnRegistrar{
+    width: 45%;
+    float: left;
+}
+
+.register-BtnSiguiente {
+    margin-top: 7%;
+}
+
+.register-BtnContainer {
+    position: relative;
+    float: right;
+    top: 5px;
+}
+
+#registroRedesSociales {
+    z-index: 2;
+    width: 56%;
+    top: 420px;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
+.signup-socials i {
+    padding-left: 7%;
+    padding-right: 10%;
+    width: 15px;
+    font-size: 14px;
+    line-height: 45px;
+}
+.signup-socials .facebook {
+    text-align: center;
+    margin-left: -5%;
+}
+.signup-socials .twitter{
+    text-align: center;
+    margin-left: -8%;
+}
+.signup-socials .google{
+    text-align: center;
+    margin-left: -2%;
+}
 .custom-data-galleries .options-tab {
     width: 646px;
     height: auto;
@@ -23,11 +108,13 @@ body{
     margin: 6px;
 }
 
-.mantenimiento-form {}
+.mantenimiento-form {
+}
+
 .mantenimiento-form select {
     min-width: 100%;
     height: 40px;
-    background: url(#{resource['/img/ui/arrow-down.png']}) no-repeat;
+    background: url(#{resource[ '/img/ui/arrow-down.png' ]}) no-repeat;
     background-size: 10px auto;
     background-position: 96% center;
     border: 1px #cacaca solid;
@@ -38,14 +125,14 @@ body{
     box-sizing: border-box;
     color: #666666;
 }
+
 .mantenimiento-form select option {
     padding: 5px;
 }
+
 .mantenimiento-form a {
     /*display: inline-block;*/
 }
-
-
 
 @media all and (max-width: 705px) {
     .custom-data-galleries {
