@@ -78,8 +78,14 @@
                             <a class="deploy-submenu" href="#"><i class="fa fa-mobile"></i>Usuario<i class="fa fa-plus"></i></a>
                             <h:form rendered="#{!login.loggedIn}">
                                 <ul class="submenu">
-                                    <li><h:link outcome="registrar"><i class="fa fa-angle-right"></i>Registrate<i class="fa fa-circle"></i></h:link></li>
+                                    <li><h:link outcome="registrar"><i class="fa fa-angle-right"></i>Registrate<i class="fa fa-circle"></i></h:link>
+                                    </li>
                                     <li><h:link outcome="login"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></h:link></li>
+                                </ul>
+                            </h:form>
+                            <h:form rendered="#{login.loggedIn}">
+                                <ul class="submenu">
+                                    <li><h:commandLink action="#{login.doLogout}"><i class="fa fa-angle-right"></i>Log out<i class="fa fa-circle"></i></h:commandLink></li>
                                 </ul>
                             </h:form>
                         </li>
@@ -95,6 +101,8 @@
                             <!--Mostrar vehiculos si ya esta logueado-->
                             <h:form rendered="#{login.loggedIn}">
                                 <ul class="submenu">
+                                    <li><a href="/lancer"><i class="fa fa-angle-right"></i>Crear Vehiculo<i class="fa fa-circle"></i></a></li>
+                                </ul><ul class="submenu">
                                     <li><a href="/lancer"><i class="fa fa-angle-right"></i>Lancer 2003<i class="fa fa-circle"></i></a></li>
                                 </ul>
                             </h:form>
