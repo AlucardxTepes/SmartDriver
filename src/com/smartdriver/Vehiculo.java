@@ -1,9 +1,8 @@
 package com.smartdriver;
 
+import javax.faces.bean.ManagedBean;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.faces.bean.ManagedBean;
 
 /**
  * Created by Alucard on 8/13/2015.
@@ -19,12 +18,14 @@ public class Vehiculo {
     private String kilometraje;
 
     private List<String> listaMarcas;
+    private List<String> listaModelosMitsubishi;
     private List<String> listaCategorias;
-    private String[] listaAnos = new String[57];
+    private String[] listaAnos = new String[58];
 
 
     public Vehiculo() {
         listaMarcas = new ArrayList<String>();
+        listaMarcas.add("Seleccionar");
         listaMarcas.add("Audi");
         listaMarcas.add("Chevrolet");
         listaMarcas.add("Ford");
@@ -44,17 +45,34 @@ public class Vehiculo {
 
         // crear categorias
         listaCategorias = new ArrayList<String>();
+        listaCategorias.add("Seleccionar");
         listaCategorias.add("Camioneta");
         listaCategorias.add("Coupe");
         listaCategorias.add("Jeepeta");
         listaCategorias.add("Sedan");
+        listaCategorias.add("Utilitario");
 
         // listaAnos
+        listaAnos[0] = "Seleccionar";
         int ultimoAno = 2017;
-        for (int i = 0; i < 57; i++) {
+        for (int i = 1; i < 58; i++) {
             ultimoAno -= 1;
             listaAnos[i] = String.valueOf(ultimoAno);
         }
+
+        // modelos Mitsubishi
+        listaModelosMitsubishi = new ArrayList<String>();
+        listaModelosMitsubishi.add("Seleccionar");
+        listaModelosMitsubishi.add("ASX");
+        listaModelosMitsubishi.add("Eclipse");
+        listaModelosMitsubishi.add("Endeavor");
+        listaModelosMitsubishi.add("Galant");
+        listaModelosMitsubishi.add("L200");
+        listaModelosMitsubishi.add("Lancer");
+        listaModelosMitsubishi.add("Mirage");
+        listaModelosMitsubishi.add("Montero");
+        listaModelosMitsubishi.add("Nativa");
+        listaModelosMitsubishi.add("Outlander");
     }
 
     public String getMarca() {
@@ -115,5 +133,9 @@ public class Vehiculo {
 
     public String[] getListaAnos() {
         return listaAnos;
+    }
+
+    public List<String> getListaModelosMitsubishi() {
+        return listaModelosMitsubishi;
     }
 }

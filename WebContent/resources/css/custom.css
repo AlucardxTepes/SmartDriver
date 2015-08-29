@@ -32,16 +32,10 @@ body {
     height: 12%;
 }
 
-.register-tab-content {
-    height: 62%;
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-    top: 5%;
-    left: 0;
-
+.tab-content{
+    top: 10%;
+    margin-top: 0;
 }
-
 .register-textbox {
     background-image: url(#{resource[ 'img/misc/menu-bg.png' ]});
     color: #bcbcbc;
@@ -53,7 +47,6 @@ body {
     margin-top: -7px;
     line-height: 100%;
     border: solid 1px #cacaca;
-    color: #666666;
     border-radius: 0px;
 }
 .btnRegistrar{
@@ -73,11 +66,11 @@ body {
 
 #registroRedesSociales {
     z-index: 2;
-    width: 56%;
-    top: 420px;
-    left: 0;
-    position: relative;
-    margin: 0 auto;
+    width: 47%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -80%);
 }
 .signup-socials i {
     padding-left: 7%;
@@ -110,7 +103,43 @@ body {
 
 .mantenimiento-form {
 }
-
+#datepicker-mes{
+    width: 47px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: inline;
+}#datepicker-dia{
+    width: 44px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: inline;
+}#datepicker-ano{
+    width: 55px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: inline;
+}
+#datepicker-dia-mantenimiento{
+    width: 44px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: inline;
+}#datepicker-tiempo-mantenimiento{
+     width: 60px;
+     min-width: 0px;
+     margin: 0;
+     padding: 0;
+     height: 30px;
+     display: inline;
+ }
 .mantenimiento-form select {
     min-width: 100%;
     height: 40px;
@@ -125,14 +154,61 @@ body {
     box-sizing: border-box;
     color: #666666;
 }
+.mantenimiento-form input {
+    min-width: 100%;
+    height: 40px;
+    background-position: 96% center;
+    border: 1px #cacaca solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    display: block;
+    box-sizing: border-box;
+    color: #666666;
+}
+
+.crear-vehiculo-wrapper{
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 250px;
+}
+.crear-vehiculo-page{
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -60px;
+}
+.crear-vehiculo-select{
+    width: 90%;
+    margin-bottom: 10px;
+}
+.crear-vehiculo-input{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#soporte-page-wrapper{
+    position: relative;
+    width: 280px;
+    height: 410px;
+    top: 50%;
+    margin-top: -310px;
+    left: 50%;
+    margin-left: -140px;
+    z-index: 2;
+}
+
 
 .mantenimiento-form select option {
     padding: 5px;
 }
 
-.mantenimiento-form a {
-    /*display: inline-block;*/
-}
+
 
 @media all and (max-width: 705px) {
     .custom-data-galleries {

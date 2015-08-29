@@ -1,11 +1,13 @@
 package com.smartdriver;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
 /**
  * Created by Alucard on 8/10/2015.
  */
 @ManagedBean
+@SessionScoped
 public class Login {
 
     boolean loggedIn;

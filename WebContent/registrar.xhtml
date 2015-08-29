@@ -12,7 +12,7 @@
             <div class="signup-page bg2"></div>
             <div class="signup-page-overlay">
 
-                <div class="tab-content tab-content-1 register-tab-content">
+                <div class="tab-content tab-content-1">
                     <a href="#" class="signup-logo"></a>
 
                     <p style="text-align: center; margin-bottom: 0px; color:#FFFFFF; line-height: 15px;">Crea tu cuenta introduciendo tus datos:</p>
@@ -36,10 +36,10 @@
                     </div>
                 </div>
                 <!--Segundo Tab == Preguntas de seguridad -->
-                <div class="tab-content tab-content-2 register-tab-content">
+                <div class="tab-content tab-content-2">
                     <a href="#" class="signup-logo"></a>
 
-                    <p style="text-align: center; margin-bottom: 0px; color:#FFFFFF line-height: 15px">Preguntas de seguridad:</p>
+                    <p style="text-align: center; margin-bottom: 0px; color:#FFFFFF; line-height: 15px">Preguntas de seguridad:</p>
 
                     <p style="color:#bcbcbc; ">Cual cuidad te gustaria visitar?</p>
                     <input type="text" class="register-textbox"/>
@@ -59,28 +59,30 @@
                     <div class="one-half"><a href="/sign-up2" class="button button-green full-button tab-but-1" style="margin-top: 15px;">Atras</a></div>
                     <div class="one-half last-column ">
                         <h:form>
-                            <h:commandButton value="Registrar" styleClass="button button-blue full-bottom" style="margin-top: 15px; width: 100%; height: 40px; cursor:pointer;"/>
+                            <h:commandButton value="Registrar" action="#{login.doLogin}" styleClass="button button-blue full-bottom" style="margin-top: 15px; width: 100%; height: 40px; cursor:pointer;"/>
                         </h:form>
+                    </div>
+                </div>
+
+                <!--Registrar con redes sociales-->
+                <div id="registroRedesSociales">
+                    <div class="or-button"><em> </em><strong>
+                        o también </strong><em> </em></div>
+                    <div class="signup-socials">
+                        <a href="#" class="facebook">
+                            <i class="fa fa-facebook"></i>Regístrate con Facebook
+                        </a>
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter"></i>Regístrate con Twitter
+                        </a>
+                        <a href="#" class="google">
+                            <i class="fa fa-google-plus"></i>Regístrate con Google Plus
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!--Registrar con redes sociales-->
-            <div id="registroRedesSociales">
-                <div class="or-button"><em> </em><strong>
-                    o también </strong><em> </em></div>
-                <div class="signup-socials">
-                    <a href="#" class="facebook">
-                        <i class="fa fa-facebook"></i>Regístrate con Facebook
-                    </a>
-                    <a href="#" class="twitter">
-                        <i class="fa fa-twitter"></i>Regístrate con Twitter
-                    </a>
-                    <a href="#" class="google">
-                        <i class="fa fa-google-plus"></i>Regístrate con Google Plus
-                    </a>
-                </div>
-            </div>
+
 
 
         </ui:define>

@@ -3550,6 +3550,7 @@ table tr:hover td{
 .share-bottom{
     position:fixed;
     width:100%;
+	max-width: 600px;
     z-index:99999999;
     background-color:#f8f8f8;
     padding-top:15px;

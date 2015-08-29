@@ -47,7 +47,6 @@
     <!-- ==============Contenedor======================-->
     <div id="contenedor">
 
-
         <!-- ==============Menu izquierda==================-->
         <div class="all-elements">
             <div class="snap-drawers">
@@ -101,7 +100,7 @@
                             <!--Mostrar vehiculos si ya esta logueado-->
                             <h:form rendered="#{login.loggedIn}">
                                 <ul class="submenu">
-                                    <li><a href="/lancer"><i class="fa fa-angle-right"></i>Crear Vehiculo<i class="fa fa-circle"></i></a></li>
+                                    <li><h:link outcome="crear-vehiculo" value="Crear Vehiculo"><i class="fa fa-angle-right"></i><i class="fa fa-circle"></i></h:link></li>
                                 </ul><ul class="submenu">
                                     <li><a href="/lancer"><i class="fa fa-angle-right"></i>Lancer 2003<i class="fa fa-circle"></i></a></li>
                                 </ul>
@@ -111,16 +110,14 @@
                         <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-file-text"></i>Documentos<i class="fa fa-plus"></i></a>
                             <ul class="submenu">
                                 <li><a href="/crear-documento"><i class="fa fa-angle-right"></i>Crear Documento<i class="fa fa-circle"></i></a></li>
-                                <li><a href="/documentos"><i class="fa fa-angle-right"></i>Mis Documentos<i
-                                        class="fa fa-circleli has-submenu"></i></a>
+                                <li><a href="/documentos"><i class="fa fa-angle-right"></i>Mis Documentos<i class="fa fa-circle"></i></a>
                                 </li>
                             </ul>
                         </li>
                         <!--Mantenimiento-->
                         <li class="has-submenu"><a href="#" class="deploy-submenu"><i class="fa fa-wrench"></i>Mantenimiento<i class="fa fa-plus"></i></a>
                             <ul class="submenu">
-                                <li><h:link outcome="crear-mantenimiento"><i class="fa fa-angle-right"></i>Crear Mantenimiento<i
-                                        class="fa fa-circle"></i></h:link>
+                                <li><h:link outcome="crear-mantenimiento"><i class="fa fa-angle-right"></i>Crear Mantenimiento<i class="fa fa-circle"></i></h:link>
                                 </li>
                                 <li><a href="/mantenimientos"><i class="fa fa-angle-right"></i>Ver Mantenimientos<i class="fa fa-circle"></i></a></li>
                             </ul>
@@ -139,7 +136,7 @@
 
                     </ul>
                     <div class="sidebar-divider">
-                        Copyright 2015. All rights reserved.
+                        Copyright 2015. Todos los derechos reservados.
                     </div>
                 </div>
 
@@ -184,7 +181,7 @@
                     </ul>
 
                     <div class="sidebar-divider">
-                        Copyright 2015. All rights reserved.
+                        Copyright 2015. Todos los derechos reservados.
                     </div>
                 </div>
             </div>
@@ -210,7 +207,7 @@
                         <a href="#" class="footer-share show-share-bottom"><i class="fa fa-share-alt"></i></a>
                         <a href="#" class="footer-up"><i class="fa fa-angle-up"></i></a>
                     </div>
-                    <p class="center-text">Copyright 2015. All rights reserved.</p>
+                    <p class="center-text">Copyright 2015. Todos los derechos reservados.</p>
                 </div>
             </div>
 

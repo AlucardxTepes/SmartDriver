@@ -11,29 +11,29 @@
         <ui:define name="content">
             <div class="login-page bg1">
                 <div class="login-page-overlay"></div>
-                <div class="login-page-wrapper">
+                <div class="login-page-wrapper" style="height: 430px; margin-top: -295px;">
                     <a href="#" class="login-logo" style="width: 170px; background-size: 100%; background-repeat: no-repeat;"></a>
 
                     <p>
                         Por favor introduce tus datos:
                     </p>
+                    <input type="text" class="login-username" placeholder="Nombre"/>
+                    <input type="text" class="login-username" placeholder="Apellido"/>
+                    <input type="text" class="login-username" placeholder="Telefono"/>
                     <input type="text" class="login-username" placeholder="Email"/>
-                    <input type="password" class="login-password" placeholder="Contraseña"/>
+                    <input type="text" class="login-username" placeholder="Cedula" style="margin-bottom: 20px;"/>
+
 
                     <div class="one-half">
                         <h:form>
-                            <h:commandLink styleClass="button button-green" value="Acceder" action="#{login.doLogin}"/>
+                            <h:commandLink styleClass="button button-green" value="Enviar" action="#{login.doLogin}"/>
                         </h:form>
                         <!--<a href="index2.html" class="button button-green">Acceder</a>-->
                     </div>
                     <div class="one-half last-column">
-                        <h:link outcome="registrar" value="Crear cuenta" styleClass="button button-blue"/>
+                        <h:link outcome="soporte" value="Limpiar" styleClass="button button-blue"/>
                     </div>
                     <div class="clear"></div>
-                    <a class="forgot" href="#">Olvidé mi contraseña</a>
-                    <h:link outcome="soporte" value="Contactar soporte tecnico" style="color: rgba(255,255,255,0.5); text-align: center;"/>
-                    <!--<a href="#" style="color: rgba(255,255,255,0.5); text-align: center;">Contactar soporte tecnico</a>-->
-                    <br/>
                 </div>
             </div>
         </ui:define>

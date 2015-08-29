@@ -10,39 +10,52 @@
 
     <ui:composition template="WEB-INF/template.xhtml">
         <ui:define name="content">
-            <div class="login-page bg1">
+            <div class="crear-vehiculo-page bg1">
                 <div class="login-page-overlay"></div>
-                <div class="login-page-wrapper">
+                <div class="crear-vehiculo-wrapper">
                     <a href="#" class="login-logo" style="width: 170px; background-size: 100%; background-repeat: no-repeat;"></a>
 
-                    <h2>
+                    <h2 style="color: #FFFFFF; margin: 20px;">
                         Crear Vehiculo
                     </h2>
                     <h:form>
-                        <p style="color:#bcbcbc; ">Marca:</p>
-                        <h:selectOneMenu value="#{vehiculo.marca}">
+                        <p style="color:#bcbcbc; margin-bottom: 0;">Marca:</p>
+                        <h:selectOneMenu value="#{vehiculo.marca}" styleClass="crear-vehiculo-select">
                             <f:selectItems value="#{vehiculo.listaMarcas}"/>
                         </h:selectOneMenu>
 
-                        <p style="color:#bcbcbc; ">Categoria:</p>
-                        <h:selectOneMenu value="#{vehiculo.categoria}">
+                        <p style="color:#bcbcbc; margin-bottom: 0;">Modelo:</p>
+                        <h:selectOneMenu value="#{vehiculo.modelo}" styleClass="crear-vehiculo-select">
+                            <f:selectItems value="#{vehiculo.listaModelosMitsubishi}"/>
+                        </h:selectOneMenu>
+
+                        <p style="color:#bcbcbc; margin-bottom: 0; ">Categoría:</p>
+                        <h:selectOneMenu value="#{vehiculo.categoria}" styleClass="crear-vehiculo-select">
                             <f:selectItems value="#{vehiculo.listaCategorias}"/>
                         </h:selectOneMenu>
 
-                        <p style="color:#bcbcbc; ">Ano:</p>
-                        <h:selectOneMenu value="#{vehiculo.ano}">
+                        <p style="color:#bcbcbc; margin-bottom: 0; ">Año:</p>
+                        <h:selectOneMenu value="#{vehiculo.ano}" styleClass="crear-vehiculo-select">
                             <f:selectItems value="#{vehiculo.listaAnos}"/>
                         </h:selectOneMenu>
+
+                        <p style="color:#bcbcbc; margin-bottom: 0; ">Placa:</p>
+                        <h:inputText value="#{vehiculo.placa}" styleClass="crear-vehiculo-input"/>
+
+                        <p style="color:#bcbcbc; margin-bottom: 0; ">Kilometraje:</p>
+                        <h:inputText value="#{vehiculo.kilometraje}" styleClass="crear-vehiculo-input"  style="margin-bottom: 20px;"/>
+
+
                     </h:form>
 
                     <div class="one-half">
                         <h:form>
-                            <h:commandLink styleClass="button button-green" value="Acceder" action="#{login.doLogin}"/>
+                            <h:link styleClass="button button-red" value="Cancelar" outcome="index"/>
                         </h:form>
                         <!--<a href="index2.html" class="button button-green">Acceder</a>-->
                     </div>
                     <div class="one-half last-column">
-                        <h:link outcome="index" value="Crear" styleClass="button button-blue"/>
+                        <h:link outcome="index" value="Crear" styleClass="button button-blue" style="min-width: 87px;text-align: center;"/>
                     </div>
                     <div class="clear"></div>
                 </div>

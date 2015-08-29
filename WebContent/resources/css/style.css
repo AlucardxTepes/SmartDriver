@@ -565,15 +565,8 @@ select {
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
-    background: url(http://www.lavozlatinaonline.net/images/dropdown_arrow.gif) 96% / 15% no-repeat #eee;
+   background: url(#{resource['/img/misc/dropdown_arrow.gif']}) 96% / 15% no-repeat #eee;
 } 
-
-
-
-
-
-
-
 
 @media (min-width:768px){
 	.content-heading{
