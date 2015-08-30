@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets">
@@ -9,32 +10,71 @@
 
     <ui:composition template="WEB-INF/template.xhtml">
         <ui:define name="content">
-            <div class="login-page bg1">
-                <div class="login-page-overlay"></div>
-                <div class="login-page-wrapper soporte-page-wrapper">
-                    <a href="#" class="login-logo" style="width: 170px; background-size: 100%; background-repeat: no-repeat;"></a>
-
-                    <p>
-                        Por favor introduce tus datos:
-                    </p>
-                    <input type="text" class="login-username" placeholder="Nombre"/>
-                    <input type="text" class="login-username" placeholder="Apellido"/>
-                    <input type="text" class="login-username" placeholder="Telefono"/>
-                    <input type="text" class="login-username" placeholder="Email"/>
-                    <input type="text" class="login-username" placeholder="Cedula" style="margin-bottom: 20px;"/>
-                    <textarea name="login-username" id="soporte-comentarios" class="login-username" placeholder="Comentarios"></textarea>
 
 
-                    <div class="one-half">
-                        <h:form>
-                            <h:commandLink styleClass="button button-green" value="Enviar" action="#{login.doLogin}"/>
-                        </h:form>
-                        <!--<a href="index2.html" class="button button-green">Acceder</a>-->
+            <div class="content">
+                <div class="decoration"></div>
+                <br/>
+                <!--Titulo-->
+                <h4>Contactar soporte tecnico</h4>
+                <br/>
+                <p>Llena el siguiente formulario con tus datos y descripcion del problema.</p>
+
+                <div class="container no-bottom">
+                    <div class="contact-form no-bottom">
+                        <form id="contactForm" action="php/contact.php" method="post" class="contactForm mantenimiento-form">
+                            <fieldset>
+                                <div id="contactNameFieldError" class="formValidationError">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Name is required!</p>
+                                    </div>
+                                </div>
+                                <div id="contactEmailFieldError" class="formValidationError">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Mail address required!</p>
+                                    </div>
+                                </div>
+                                <div id="contactEmailFieldError2" class="formValidationError">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Mail address must be valid!</p>
+                                    </div>
+                                </div>
+                                <div id="contactMessageTextareaError" class="formValidationError">
+                                    <div class="static-notification-red tap-dismiss-notification">
+                                        <p class="center-text uppercase">Message field is empty!</p>
+                                    </div>
+                                </div>
+
+
+                                <!--Datos-->
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Nombre:</label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Apellido</label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Telefono</label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Email</label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Cedula</label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+                                </div>
+                                <div class="formTextareaWrap">
+                                    <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Descripcion del problema:</label>
+                                    <textarea name="contactMessageTextarea" class="contactTextarea" id="contactMessageTextarea" cols="10" rows="10"></textarea>
+                                </div>
+                                <h:link styleClass="button center-button button-green full-bottom detected-button" outcome="login" value="Enviar" style="width: 100%;"/>
+                            </fieldset>
+                        </form>
                     </div>
-                    <div class="one-half last-column">
-                        <h:link outcome="soporte" value="Limpiar" styleClass="button button-blue"/>
-                    </div>
-                    <div class="clear"></div>
                 </div>
             </div>
         </ui:define>
