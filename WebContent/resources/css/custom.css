@@ -79,6 +79,27 @@ body {
     font-size: 14px;
     line-height: 45px;
 }
+
+/*Soporte tecnico */
+.soporte-page-wrapper{
+    height: 100%;
+    width: 50%;
+    margin-top: 0;
+    top: 9%;
+    left: 50%;
+    margin-left: -140px;
+    z-index: 2;
+}
+
+#soporte-comentarios{
+    line-height: 18px;
+    height: 80px;
+    font: normal normal normal normal 13.3333330154419px/normal Arial;
+    background-color: white;
+    top: -20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
 .signup-socials .facebook {
     text-align: center;
     margin-left: -5%;
