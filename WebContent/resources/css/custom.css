@@ -139,7 +139,47 @@ body {
      padding: 0;
      height: 30px;
      display: inline;
+ }#estado-mantenimiento{
+     width: 100px;
+     min-width: 0px;
+     margin: 0;
+     padding: 0;
+     height: 30px;
+     display: inline;
  }
+
+  /*Revisiones*/
+#datepicker-mes-revision{
+    width: 47px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: inline;
+}#datepicker-dia-revision{
+     width: 44px;
+     min-width: 0px;
+     margin: 0;
+     padding: 0;
+     height: 30px;
+     display: inline;
+ }#datepicker-ano-revision{
+      width: 55px;
+      min-width: 0px;
+      margin: 0;
+      padding: 0;
+      height: 30px;
+      display: inline;
+  }
+
+#datepicker-dia-revision2{
+    width: 44px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: inline;
+}
 .mantenimiento-form select {
     min-width: 100%;
     height: 40px;
@@ -213,7 +253,7 @@ body {
     width: 20px;
     height: auto;
     background-image:url(#{resource['img/lists/delete_48.png']});
-    margin-left: 32px;
+    margin-left: 45px;
 }
 
 
